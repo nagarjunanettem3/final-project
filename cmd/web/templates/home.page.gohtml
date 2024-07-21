@@ -1,0 +1,49 @@
+{{template "base" .}}
+
+{{define "content" }}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="mt-5">Home</h1>
+                <hr>
+
+                    <table>
+                    <thead>
+                        <tr>
+                            <th>Plan Name &nbsp;&nbsp;</th>
+                            <th>Description&nbsp;</th>
+                            <th>Price&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic</td>
+                            <td>Basic features for personal use</td>
+                            <td class="plan-price">$10/month</td>
+                        </tr>
+                        <tr>
+                            <td>Standard</td>
+                            <td>Standard features for small teams</td>
+                            <td class="plan-price">$20/month</td>
+                        </tr>
+                        <tr>
+                            <td>Premium</td>
+                            <td>All features for large organizations</td>
+                            <td class="plan-price">$30/month</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+               <a class="btn btn-outline-secondary" href="/login">Login</a>
+                <a class="btn btn-outline-secondary" href="/register">Register</a>
+            </div>
+
+        </div>
+    </div>
+{{end}}
+
+{{define "js"}}
+    <script>
+
+    </script>
+{{end}} 
